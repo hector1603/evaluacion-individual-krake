@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+
+    <link rel="stylesheet" href="notas.css">
+</head>
+
+<body onload="mostrarTabla();">
+
+    <img src="img/estudiantes.png" alt="" width="200px">
+
+    <form class="formulario">
+        <input type="text"class="input" id="txtNombre" placeholder="Nombre"><br>
+        <input type="text"class="input" id="txtApellido" placeholder="Apellido"><br>
+        <input type="text"class="input" id="txtNota1" placeholder="Nota 1"><br>
+        <input type="text"class="input" id="txtNota2" placeholder="Nota 2"><br>
+        <input type="text"class="input" id="txtNota3" placeholder="Nota 3"><br>
+
+        <input type="button" class="btn" id="btnGuardar" value="Guardar" onclick="guardar();">
+        <input type="button" class="btn" value="Calcular" onclick="calcular();">
+    </form>
+
+    <div>
+        <div id="lblNotas"></div>
+        <div id="lblPromedio"></div>
+    </div>
+
+    <div id="tablaEstudiantes">
+
+    </div>
+
+    <p>Autor - Hector Ajumado 2024</p>
+
+    <script src="notas.js"></script>
+    <script src="utilitarios.js"></script>
+</body>
+
+</html>
